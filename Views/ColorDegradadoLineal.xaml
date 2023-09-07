@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RellenosDeColorT.Views.ColorDegradadoLineal"
+             Title="ColorDegradadoLineal">
+    <HorizontalStackLayout Margin="0,50,0,0" HorizontalOptions="Center" Spacing="20">
+
+        <VerticalStackLayout Spacing="20">
+
+            <Label Text="Degradado Lineal Horizontal"
+                   FontAttributes="Bold"/>
+
+            <Frame BorderColor="LightGray"
+                   HasShadow="True"
+                   HeightRequest="120"
+                   WidthRequest="120">
+                <Frame.Background>
+                    <!--Punto de inicio por defecto es la posición (0,0)-->
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Yellow"
+                                      Offset="0.1"/>
+                        <GradientStop Color="Green"
+                                      Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="20">
+
+            <Label Text="Degradado Lineal Vertical"
+            FontAttributes="Bold"/>
+
+            <Frame BorderColor="LightGray"
+            HasShadow="True"
+            HeightRequest="120"
+            WidthRequest="120">
+                <Frame.Background>
+                    <!--Punto de inicio por defecto es la posición (0,0)-->
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="Yellow"
+                               Offset="0.1"/>
+                        <GradientStop Color="Green"
+                               Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </VerticalStackLayout>
+        
+        <VerticalStackLayout Spacing="20">
+
+     <Label Text="Degradado Lineal Diagonal"
+     FontAttributes="Bold"/>
+
+     <Frame BorderColor="LightGray"
+            HasShadow="True"
+            HeightRequest="120"
+            WidthRequest="120">
+         <Frame.Background>
+             <!--Punto de inicio por defecto es la posición (0,0)-->
+                    <!--Punto final por defecto es la posición (1,1)-->
+                    <LinearGradientBrush>
+                 <GradientStop Color="Yellow"
+                               Offset="0.1"/>
+                 <GradientStop Color="Green"
+                               Offset="1.0"/>
+             </LinearGradientBrush>
+         </Frame.Background>
+     </Frame>
+ </VerticalStackLayout> 
+    </HorizontalStackLayout>
+</ContentPage>

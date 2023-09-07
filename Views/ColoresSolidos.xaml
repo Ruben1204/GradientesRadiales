@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RellenosDeColorT.Views.ColoresSolidos"
+             Title="ColoresSolidos">
+    <HorizontalStackLayout Margin="0,50,0,0" HorizontalOptions="Center" Spacing="20">
+
+        <Frame Background="DarkBlue"
+               BorderColor="LightGray"
+               HasShadow="True"
+               CornerRadius="12"
+               HeightRequest="120"
+               WidthRequest="120"/>
+
+        <Frame BorderColor="LightGray"
+               HasShadow="True"
+               CornerRadius="12"
+               HeightRequest="120"
+               WidthRequest="120">
+            <Frame.Background>
+                <SolidColorBrush Color="DarkBlue"/>
+            </Frame.Background>
+        </Frame>
+
+        <Frame Background="{x:Static Brush.DarkBlue}"
+               BorderColor="LightGray"
+               HasShadow="True"
+               CornerRadius="12"
+               HeightRequest="120"
+               WidthRequest="120"/>
+
+        <Frame Background="#FF9988"
+               BorderColor="LightGray"
+               HasShadow="True"
+               CornerRadius="12"
+               HeightRequest="120"
+               WidthRequest="120"/>
+
+    </HorizontalStackLayout>
+</ContentPage>

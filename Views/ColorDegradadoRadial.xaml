@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RellenosDeColorT.Views.ColorDegradadoRadial"
+             Title="ColorDegradadoRadial">
+    
+    <HorizontalStackLayout Margin="0,50,0,0" HorizontalOptions="Center" Spacing="20">
+        
+        <VerticalStackLayout Spacing="20">
+            <Label Text="Centro de Degradado en el CENTRO"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+
+            <Frame BorderColor="LightGray"
+                   HasShadow="True"
+                   CornerRadius="12"
+                   HeightRequest="120"
+                   WidthRequest="120">
+                <Frame.Background>
+                    <!--Centro por defecto (0.5,0.5) 
+                    Radius por defecto es (0.5)-->
+                    <RadialGradientBrush>
+                        <GradientStop Color="Red"
+                                      Offset="0.1"/>
+                        <GradientStop Color="DarkBlue"
+                                      Offset="1.0"/>
+                    </RadialGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="20">
+            <Label Text="Centro de degradado Esq Superior Izq."
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+
+            <Frame BorderColor="LightGray"
+                   HasShadow="True"
+                   CornerRadius="12"
+                   HeightRequest="120"
+                   WidthRequest="120">
+                <Frame.Background>
+                    <!--Radius por defecto es (0.5)-->
+                    <RadialGradientBrush Center="0.0,0.0">
+                        <GradientStop Color="Red"
+                               Offset="0.1"/>
+                        <GradientStop Color="DarkBlue"
+                               Offset="1.0"/>
+                    </RadialGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Spacing="20">
+            <Label Text="Centro de Degradado Esq Inferior Der."
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"/>
+
+            <Frame BorderColor="LightGray"
+                   HasShadow="True"
+                   CornerRadius="12"
+                   HeightRequest="120"
+                    WidthRequest="120">
+                <Frame.Background>
+                    <!--Radius por defecto es (0.5)-->
+                    <RadialGradientBrush Center="1.0,1.0">
+                        <GradientStop Color="Red"
+                               Offset="0.1"/>
+                        <GradientStop Color="DarkBlue"
+                               Offset="1.0"/>
+                    </RadialGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </VerticalStackLayout>
+
+    </HorizontalStackLayout>
+</ContentPage>
